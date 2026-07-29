@@ -5,8 +5,9 @@ import type { FormValues } from '@/components/ProductForm/types';
 export default function Product() {
   const navigate = useNavigate();
 
-  const handleSubmit = async (_data: FormValues) => {
+  const handleSubmit = async (data: FormValues) => {
     // TODO: 调用保存 API
+    console.log('Form data:', data);
   };
 
   return (
