@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "commit": "cz",
+    "commit": "node scripts/commit.mjs",
     "prepare": "husky"
   },
   "dependencies": {
@@ -38,15 +38,5 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.0",
     "vite": "^8.1.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog",
-      "skipQuestions": ["scope", "body", "isBreaking", "breaking", "isIssueAffected", "issues"],
-      "messages": {
-        "type": "选择提交类型:",
-        "subject": "输入简短描述:"
-      }
-    }
   }
 }
