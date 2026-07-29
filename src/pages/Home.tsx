@@ -6,7 +6,7 @@ export default function Home() {
       <h1>首页</h1>
       <ul>
         <li>
-          <Link to="/product">商品test</Link>
+          <Link to="/product">商品管理</Link>
         </li>
       </ul>
     </div>
